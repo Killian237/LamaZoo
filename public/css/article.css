@@ -1,0 +1,20 @@
+.card-text small {
+    font-style: italic;
+}
+
+.card img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    display: block;
+}
+
+.card .col-md-4 {
+    flex: 0 0 auto;
+    max-width: 300px; /* fixe une largeur raisonnable pour les images */
+}
+
+
+

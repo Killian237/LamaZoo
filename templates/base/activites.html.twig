@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }} Activités
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="css/activites.css">
+    <style>
+        .carousel-container {
+            max-width: 1200px; /* Largeur fixe ou max pour garder les boutons accessibles */
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden; /* Cache le débordement horizontal */
+            background-color: #F8F8F8;
+            padding: 2rem;
+        }
+        .carousel {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            max-width: 100%;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            background-color: #779A15;
+            border: none;
+            color: #F8F8F8;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            opacity: 0.95;
+        }
+        .carousel-btn.prev { left: 1rem; }
+        .carousel-btn.next { right: 1rem; }
+    </style>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="js/activites.js"></script>
+{% endblock %}
+
+{% block body %}
+
+    <h1 class="text-center text-primary mt-4 pt-4 display-1 fw-bold">
+        Nos activités</h1>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="card">
+                <img src="images/nuit_immersive.png" alt="Nuit Immersive">
+                <div class="card-body">
+                    <h3>Nuit Immersive : Dormir au Cœur du Zoo</h3>
+                    <p>Passe une nuit magique entouré des bruits de la savane, de la jungle et de la forêt tropicale. En tente lodge ou dôme transparent, vis une immersion totale avec visite nocturne, contes animaliers autour du feu, et réveil au chant des oiseaux exotiques.</p>
+                    <p><strong>Durée :</strong> 1 nuit (arrivée 18h – départ 9h)</p>
+                    <p><strong>Participants :</strong> 2 à 4 par tente</p>
+                    <p><strong>Réservation :</strong> Minimum 1 semaine à l’avance</p>
+                    <p><strong>Bonus :</strong> Petit déjeuner + accès anticipé</p>
+                    <a href="#" class="btn btn-primary">Réserver</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/chasse_aux_tresors.png" alt="Chasse au tresor">
+                <div class="card-body">
+                    <h3>Safari Mystérieux : À la Recherche de la Clé Perdue</h3>
+                    <p>Au cœur du zoo, une ancienne légende raconte qu'un trésor caché attend d'être découvert, mais une clé mystique est nécessaire pour y accéder. Cependant, cette clé a été dispersée à travers différents enclos d'animaux. Vous et votre équipe devez explorer le zoo, résoudre des énigmes liées aux animaux, déchiffrer des indices et découvrir où la clé est cachée avant que la nuit tombe et que le trésor disparaisse à jamais !</p>
+                    <p><strong>Durée :</strong> 1h</p>
+                    <p><strong>Participants :</strong> 3 à 6</p>
+                    <p><strong>Réservation :</strong> Obligatoire</p>
+                    <p><strong>Bonus :</strong> Une photo souvenir prise à la fin de l’aventure + boisson offerte</p>
+                    <a href="#" class="btn btn-primary">Réserver</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/activite_lion.png" alt="Roi de la Savane">
+                <div class="card-body">
+                    <h3>Roi de la Savane : Rencontre avec le Lion</h3>
+                    <p>Vivez un moment privilégié avec le lion pendant son repas, guidé par un soigneur passionné. Atelier rugissements inclus !</p>
+                    <p><strong>Durée :</strong> 45 minutes</p>
+                    <p><strong>Participants :</strong> 4 maximum</p>
+                    <p><strong>Réservation :</strong> 24h à l’avance</p>
+                    <p><strong>Bonus :</strong> Certificat + carte collector</p>
+                    <a href="#" class="btn btn-primary">Réserver</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/nuit_serpent.png" alt="Nuit au Reptilarium">
+                <div class="card-body">
+                    <h3>Nuit au Reptilarium : Chuchoteur de Serpents</h3>
+                    <p>Explorez le monde des reptiles à la lueur de lanternes avec un herpétologue. Manipulez (en douceur) certains serpents non venimeux.</p>
+                    <p><strong>Durée :</strong> 1h15</p>
+                    <p><strong>Participants :</strong> 8 maximum</p>
+                    <p><strong>Réservation :</strong> Vendredis soirs uniquement</p>
+                    <p><strong>Bonus :</strong> Badge + photo avec python royal</p>
+                    <a href="#" class="btn btn-primary">Réserver</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/activite_girafe.png" alt="Petit-Déjeuner Girafe">
+                <div class="card-body">
+                    <h3>Petit-Déjeuner Gourmand: Nourrissez les Girafes !</h3>
+                    <p>Vivez un moment unique au lever du jour en participant au nourrissage des girafes. Approchez ces géantes majestueuses sur une passerelle spécialement aménagée, préparez leur repas avec un soigneur passionné et offrez-leur directement des branchages et fruits dont elles raffolent. Profitez de cette proximité exceptionnelle pour observer leurs gestes gracieux, poser toutes vos questions et immortaliser l’instant avec une photo inoubliable, le regard dans les yeux d’une girafe.</p>
+                    <p><strong>Durée :</strong> 1h (début 8h30 – fin 9h30)</p>
+                    <p><strong>Participants :</strong> 2 à 6 personnes</p>
+                    <p><strong>Réservation :</strong> Minimum 3 jours à l’avance</p>
+                    <p><strong>Bonus :</strong> Rencontre avec le soigneur + photo souvenir offerte</p>
+                    <a href="#" class="btn btn-primary">Réserver</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn prev">‹</button>
+        <button class="carousel-btn next">›</button>
+    </div>
+
+{% endblock %}

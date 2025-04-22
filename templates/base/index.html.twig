@@ -1,0 +1,140 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() }} Accueil
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	<link rel="stylesheet" href="css/article.css">
+{% endblock %}
+
+
+{% block body %}
+
+
+	<h1 class="text-center text-primary mt-4 pt-4 display-1 fw-bold">
+		Présentation du Lama Zoo</h1>
+
+
+	<div class="container">
+
+		<h1 class="text-center mb-4"></h1>
+		<p>
+			Niché au cœur de la nature,
+			<strong>Lama Zoo</strong>
+			est l’un des plus grands parcs zoologiques de France, s’étendant sur
+			<strong>44 hectares</strong>
+			et accueillant près de
+			<strong>35 000 animaux</strong>. Fondé en
+			<strong>1980</strong>, il est pionnier dans la présentation d’espèces rares et a fortement contribué à la vulgarisation de la biodiversité animale en France.
+		</p>
+
+		<h3 class="mt-5">🌍 Un engagement fort pour la conservation</h3>
+		<p>
+			Le Lama Zoo est
+			<strong>membre permanent</strong>
+			des associations
+			<strong>EAZA</strong>
+			et
+			<strong>WAZA</strong>. 
+			Il participe activement à des
+			<strong>programmes de conservation</strong>
+			des espèces menacées, notamment via son association
+			<em>Retour à la Nature</em>, qui soutient la réintroduction d’animaux en Afrique.
+		</p>
+
+		<h3 class="mt-5">💬 Une expérience unique pour tous</h3>
+		<p>
+			Des
+			<strong>ateliers pédagogiques</strong>
+			d'observation des animaux sont proposés sur inscription à tout type de public.
+		</p>
+
+		<h3 class="mt-5">🏨 Hébergement et restauration</h3>
+		<p>Profitez de :</p>
+		<ul>
+			<li>Une
+				<strong>résidence hôtelière</strong>
+			</li>
+			<li>Deux
+				<strong>hôtels 3 étoiles</strong>
+			</li>
+			<li>
+				<strong>20 points de restauration</strong>
+				pour petits et grands gourmands</li>
+		</ul>
+
+		<h3 class="mt-5">👨‍👩‍👧‍👦 Une équipe dévouée</h3>
+		<p>
+			Le parc fonctionne grâce à
+			<strong>40 salariés permanents</strong>
+			et près de
+			<strong>180 saisonniers</strong>
+			en haute saison pour garantir une visite exceptionnelle.
+		</p>
+
+		<h3 class="mt-5">🐾 Devenez parrain d’un animal</h3>
+		<p>
+			Soutenez la biodiversité en
+			<strong>parrainant un animal</strong>
+			! Vous recevrez régulièrement des
+			<strong>nouvelles personnalisées</strong>
+			de votre protégé.
+		</p>
+
+
+		<h1 class="text-center text-primary mt-4 pt-4 display-1 fw-bold">
+			Devenir parrain ?</h1>
+
+		<div class="container my-5">
+			<div class="card shadow-lg">
+				<div class="row g-0">
+					<div class="col-md-4">
+						<img src="images/lama_serge.png" alt="Logo">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<p class="card-text text-muted mb-1">
+								<small>Publié le 16 avril 2025</small>
+							</p>
+							<h5 class="text-info">Rencontrez Serge, notre Lama superstar</h5>
+							<p class="card-text">
+								Serge est un lama de 142 kg arrivé d’un zoo italien. Il est réputé pour sa tranquillité,
+                        sa gourmandise… et son amour inconditionnel pour les carottes. Parrainer Serge, c’est
+                        soutenir la réintroduction des espèces menacées en milieu naturel.
+							</p>
+							<a href="#" class="btn btn-primary">Parrainer Serge 🦙</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container my-5">
+			<div class="card shadow-lg">
+				<div class="row g-0">
+					<div class="col-md-4">
+						<img src="images/aigle_royal.png" alt="Logo">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<p class="card-text text-muted mb-1">
+								<small>Publié le 16 avril 2025</small>
+							</p>
+							<h5 class="text-info">Aïcha, notre majestueuse Aigle royal</h5>
+							<p class="card-text">
+								Rescapée d’un trafic animalier, Aïcha a été recueillie par le Lama Zoo en 2019. Depuis, elle vit dans un
+                        grand espace protégé et participe à des démonstrations éducatives pour sensibiliser les visiteurs à la
+                        préservation des rapaces. Aidez-nous à continuer cette mission.
+							</p>
+							<a href="#" class="btn btn-primary">Parrainer Aïcha 🦅</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+{% endblock %}

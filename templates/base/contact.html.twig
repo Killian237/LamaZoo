@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	Contact
+{% endblock %}
+
+{% block body %}
+
+
+	<h1 class="text-center text-primary mt-4 pt-4 display-1 fw-bold">
+		Contactez-nous</h1>
+
+
+	<div class="container py-5">
+		<div class="row mt-5">
+			<div class="col-md-6 offset-md-3">
+				<h4 class="text-center">Nos informations de contact</h4>
+				<p class="text-center">Adresse : 123 Rue Exemple, Ville, Code Postal</p>
+				<p class="text-center">Téléphone : +33 1 23 45 67 89</p>
+				<p class="text-center">Email : contact@votreentreprise.com</p>
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}
